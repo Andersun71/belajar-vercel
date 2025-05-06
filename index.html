@@ -1,3 +1,49 @@
-<h1>Hello world</h1>
-<p>Saya suka Dedi</p>
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Nama Pasangan</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Cek Nama Pasangan</h1>
+        <p class="cek-info">Cek nama pasangan kamu</p>
+        <div class="search">
+          <div class="form-box">
+            <form>
+              <div class="gender-selection">
+                <label
+                  ><input type="radio" name="gender" value="male" checked />
+                  Laki-laki</label
+                >
+                <label
+                  ><input type="radio" name="gender" value="female" />
+                  Perempuan</label
+                >
+              </div>
+              <input
+                type="text"
+                id="search"
+                placeholder="masukkan nama anda"
+              /><br />
+              <button id="btn-search">Check</button>
+            </form>
+          </div>
+        </div>
+        <div class="hasil-khodam">
+          <p id="result">NAMA - Pasangan kamu : .....</p>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
+  
